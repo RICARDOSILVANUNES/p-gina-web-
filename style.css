@@ -1,12 +1,12 @@
 
     body {
-      background-color: #d83232; /* cinza claro */
+      background-color: #c4bcbc; /* cinza claro */
       color: #462222; /* cor padrão do texto */
       font-family: Arial, sans-serif;
     }
 
       a:hover {
-      color: #857870; /* laranja */
+      color: #db6e2b; /* laranja */
       text-decoration: underline;
     }
 

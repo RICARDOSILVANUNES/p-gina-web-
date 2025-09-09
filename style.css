@@ -1,0 +1,45 @@
+
+    body {
+      background-color: #f0f0f0; /* cinza claro */
+      color: #333333; /* cor padrão do texto */
+      font-family: Arial, sans-serif;
+    }
+
+    /* Títulos principais (h1) */
+    h1 {
+      color: #0044cc; /* azul */
+      font-size: 36px;
+    }
+
+    /* Títulos secundários (h2) */
+    h2 {
+      color: #0077aa; /* azul claro */
+      font-size: 28px;
+    }
+
+    /* Parágrafos */
+    p {
+      color: #222222; /* quase preto */
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Links */
+    a {
+      color: #cc0000; /* vermelho */
+      text-decoration: none;
+    }
+
+    /* Links ao passar o mouse */
+    a:hover {
+      color: #ff6600; /* laranja */
+      text-decoration: underline;
+    }
+
+    /* Fundo de uma seção específica */
+    .secao-destaque {
+      background-color: #ffffff; /* branco */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }

@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 2000px; /* Para criar uma página rolável */
+    }
+
+    .botao {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .botao:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="botao" onclick="subir()">Subir</button>
+  <button class="botao" onclick="descer()">Descer</button>
+
+  <script>
+    function subir() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function descer() {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
+
+
+
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="style.css">

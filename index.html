@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saturno</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      height: 2000px; /* Para criar uma página rolável */
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1, h2 {
+      text-align: center;
     }
 
     .botao {
@@ -23,15 +31,29 @@
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
+      margin-left: 10px;
     }
 
     .botao:hover {
       background-color: #0056b3;
     }
+
+    .imagens {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .imagens img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Botões -->
   <button class="botao" onclick="subir()">Subir</button>
   <button class="botao" onclick="descer()">Descer</button>
 
@@ -45,64 +67,97 @@
     }
   </script>
 
+  <!-- Título principal -->
+  <h1>Saturno</h1>
+
+  <!-- Introdução -->
+  <section>
+    <h2>🌌 Introdução</h2>
+    <p>
+      Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar, ficando atrás apenas de Júpiter. 
+      Com um diâmetro de aproximadamente 116 mil quilômetros, ele é cerca de 9 vezes maior que a Terra. 
+      Sua composição é majoritariamente gasosa, formada por hidrogênio e hélio, o que o classifica como um gigante gasoso.
+    </p>
+    <p>
+      O que torna Saturno verdadeiramente fascinante é seu sistema de anéis, o mais extenso e visível entre todos os planetas. 
+      Esses anéis são compostos por fragmentos de gelo, rochas e poeira cósmica, distribuídos em sete grandes conjuntos, 
+      com destaque para os anéis A, B e C.
+    </p>
+    <p>
+      Saturno possui 82 luas conhecidas, sendo Titã a maior e mais intrigante. Titã tem atmosfera densa e características que 
+      lembram a Terra primitiva, o que a torna alvo de estudos sobre possibilidade de vida.
+    </p>
+    <p>
+      A rotação de Saturno é extremamente rápida: ele leva apenas 10,7 horas para completar um giro em torno de si mesmo. 
+      Já sua translação — o movimento ao redor do Sol — dura cerca de 29,4 anos terrestres.
+    </p>
+    <p>
+      Sua atmosfera apresenta faixas coloridas visíveis, causadas por ventos intensos e tempestades. A temperatura média é de 
+      cerca de -138 ºC, tornando-o um dos planetas mais frios do Sistema Solar.
+    </p>
+    <p>
+      Saturno foi observado pela primeira vez por Galileu Galilei em 1610, e desde então tem sido alvo de diversas missões 
+      espaciais, como a famosa Cassini, que revelou detalhes impressionantes sobre sua estrutura, luas e anéis.
+    </p>
+  </section>
+
+  <!-- Estrutura Interna -->
+  <section>
+    <h2>🧠 Estrutura Interna</h2>
+    <ul>
+      <li><strong>Núcleo:</strong> Provavelmente composto por rocha, gelo e elementos pesados. Pequeno, mas extremamente denso.</li>
+      <li><strong>Camadas:</strong> Hidrogênio metálico líquido, seguido por hidrogênio líquido e atmosfera gasosa.</li>
+      <li><strong>Densidade:</strong> Menor que a da água (0,687 g/cm³) — flutuaria em uma piscina gigante!</li>
+    </ul>
+  </section>
+
+  <!-- Atmosfera e Clima -->
+  <section>
+    <h2>🌬️ Atmosfera e Clima</h2>
+    <ul>
+      <li><strong>Composição:</strong> 96% hidrogênio, 3% hélio, traços de metano, amônia e vapor d’água.</li>
+      <li><strong>Tempestades:</strong> Inclui o “Hexágono de Saturno”, com ventos de até 320 km/h.</li>
+      <li><strong>Temperatura média:</strong> Cerca de –138 °C.</li>
+    </ul>
+  </section>
+
+  <!-- Sistema de Anéis -->
+  <section>
+    <h2>💍 Sistema de Anéis</h2>
+    <ul>
+      <li><strong>Composição:</strong> 99% gelo e 1% partículas de silicato.</li>
+      <li><strong>Extensão:</strong> Até 282 mil km de diâmetro; espessura média de apenas 1 km.</li>
+      <li><strong>Origem:</strong> Jovens — entre 100 mil e 10 milhões de anos.</li>
+      <li><strong>Divisões:</strong> A, B e C, com a Cassini Division entre A e B.</li>
+    </ul>
+  </section>
+
+  <!-- Luas -->
+  <section>
+    <h2>🌑 Luas</h2>
+    <ul>
+      <li><strong>Total:</strong> 82 luas confirmadas.</li>
+      <li><strong>Titã:</strong> Atmosfera densa, lagos de metano/etano e semelhanças com a Terra primitiva.</li>
+      <li><strong>Encélado:</strong> Jatos de água e possível oceano subterrâneo — potencial para vida.</li>
+    </ul>
+  </section>
+
+  <!-- Exploração Espacial -->
+  <section>
+    <h2>🚀 Exploração Espacial</h2>
+    <ul>
+      <li><strong>Missões:</strong> Sonda Cassini (2004–2017), a mais importante.</li>
+      <li><strong>Descobertas:</strong> Anéis jovens, Encélado com atividade geológica e mais.</li>
+    </ul>
+  </section>
+
+  <!-- Imagens -->
+  <section class="imagens">
+    <h2>📷 Imagens de Saturno</h2>
+    <img src="02.png" alt="Imagem 02 de Saturno">
+    <img src="01.jpg" alt="Imagem 01 de Saturno">
+    <img src="03.png" alt="Imagem 03 de Saturno">
+  </section>
+
 </body>
 </html>
-
-
-
-    <title>Document</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<body>
-    <h1><center>Saturno</center></h1>
-    <p>Saturno é o sexto planeta a partir do Sol e o segundo maior do Sistema Solar, ficando atrás apenas de Júpiter. Com um diâmetro de aproximadamente 116 mil quilômetros, ele é cerca de 9 vezes maior que a Terra. Sua composição é majoritariamente gasosa, formada por hidrogênio e hélio, o que o classifica como um gigante gasoso.
-
-O que torna Saturno verdadeiramente fascinante é seu sistema de anéis, o mais extenso e visível entre todos os planetas. Esses anéis são compostos por fragmentos de gelo, rochas e poeira cósmica, distribuídos em sete grandes conjuntos, com destaque para os anéis A, B e C.
-
-Saturno possui 82 luas conhecidas, sendo Titã a maior e mais intrigante. Titã tem atmosfera densa e características que lembram a Terra primitiva, o que a torna alvo de estudos sobre possibilidade de vida.
-
-A rotação de Saturno é extremamente rápida: ele leva apenas 10,7 horas para completar um giro em torno de si mesmo. Já sua translação — o movimento ao redor do Sol — dura cerca de 29,4 anos terrestres.
-
-Sua atmosfera apresenta faixas coloridas visíveis, causadas por ventos intensos e tempestades. A temperatura média é de cerca de -138 ºC, tornando-o um dos planetas mais frios do Sistema Solar.
-
-Saturno foi observado pela primeira vez por Galileu Galilei em 1610, e desde então tem sido alvo de diversas missões espaciais, como a famosa Cassini, que revelou detalhes impressionantes sobre sua estrutura, luas e anéis.</p>
-    
-</body>
-</html>
-<p>🧠 Estrutura Interna
-Núcleo: Provavelmente composto por rocha, gelo e elementos pesados. É pequeno, mas extremamente denso.
-
-Camadas: Envolto por hidrogênio metálico líquido, seguido por hidrogênio líquido e uma atmosfera gasosa.
-
-Densidade: É o planeta menos denso do Sistema Solar — sua densidade é menor que a da água (0,687 g/cm³), o que significa que, teoricamente, Saturno flutuaria em uma piscina gigante!
-
-🌬️ Atmosfera e Clima
-Composição: 96% hidrogênio, 3% hélio, traços de metano, amônia e vapor d’água.
-
-Tempestades: Saturno abriga tempestades gigantescas, incluindo o famoso “Hexágono de Saturno” — uma formação atmosférica em forma de hexágono no polo norte, com ventos de até 320 km/h.
-
-Temperatura média: Cerca de –138 °C, mas pode variar conforme a altitude e região.
-
-💍 Sistema de Anéis
-Composição: 99% gelo e 1% partículas de silicato.
-
-Extensão: Chegam a 282 mil km de diâmetro, mas têm espessura média de apenas 1 km.
-
-Origem: Estudos recentes indicam que os anéis são relativamente jovens — entre 100 mil e 10 milhões de anos.
-
-Divisões: Os principais são os anéis A, B e C, separados pela Cassini Division, uma faixa escura visível entre os anéis A e B.
-
-🌑 Luas
-Total: Saturno possui 82 luas confirmadas, sendo Titã a maior e mais estudada.
-
-Titã: Tem atmosfera densa, lagos de metano e etano, e características que lembram a Terra primitiva.
-
-Encélado: Outra lua intrigante, que expele jatos de água e pode abrigar um oceano subterrâneo — potencialmente favorável à vida.
-
-🚀 Exploração Espacial
-Missões: A sonda Cassini, da NASA, foi a mais importante. Ela orbitou Saturno de 2004 a 2017 e revelou dados cruciais sobre o planeta, seus anéis e luas.
-
-Descobertas: Cassini mostrou que os anéis são mais jovens do que se pensava e que Encélado tem atividade geológica surpreendente.</p> 
-<img src="02.png" alt="imagem 02" style ="max-width: 100%; height: auto;">
-<img src="01.jpg" alt="imagem 02" style="max-width: 100%; height: auto;">
-<img src="03.png" alt="imagem 03" style="max-width:100%; height:auto ;">

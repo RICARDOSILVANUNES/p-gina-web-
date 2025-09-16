@@ -21,17 +21,26 @@
     }
 
     .botao {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #007BFF;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-left: 10px;
+  position: fixed;
+  bottom: 20px;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Específicos para posicionar separadamente */
+#btnSubir {
+  right: 120px;
+}
+
+#btnDescer {
+  right: 20px;
+}
+
     }
 
     .botao:hover {
@@ -54,8 +63,8 @@
 <body>
 
   <!-- Botões -->
-  <button class="botao" onclick="subir()">Subir</button>
-  <button class="botao" onclick="descer()">Descer</button>
+ <button id="btnSubir" class="botao" onclick="subir()">Subir</button>
+<button id="btnDescer" class="botao" onclick="descer()">Descer</button>
 
   <script>
     function subir() {
@@ -65,44 +74,6 @@
     function descer() {
       window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Topo</title>
-  <style>
-    #topo {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: none;
-      padding: 10px;
-      background: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-
-  <button id="topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Topo</button>
-
-  <script>
-    window.onscroll = () => {
-      topo.style.display = window.scrollY > 200 ? 'block' : 'none';
-    };
-  </script>
-
-  <div style="height:2000px"></div> <!-- Só para criar rolagem -->
-
-</body>
-</html>
-
-
-
 
   </script>
 
